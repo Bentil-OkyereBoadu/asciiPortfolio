@@ -1,0 +1,18 @@
+$ git checkout HEAD portrait.txt
+$ git add portrait.txt
+$ git commit -m "portrait goatee/eyebrow"
+[master 20a8ad7] portrait goatee/eyebrow
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+$ git add house.txt portrait.txt tree.txt
+$ git commit -m "All 3 with dates changed."
+[master bb6e841] All 3 with dates changed.
+ 3 files changed, 19 insertions(+), 2 deletions(-)
+ create mode 100644 house.txt
+$ git add .
+$ git reset HEAD house.txt
+Unstaged changes after reset:
+M       house.txt
+$ git commit -m "Final commit."
+[master ed5440e] Final commit.
+ 2 files changed, 3 insertions(+), 1 deletion(-)
+$ 
